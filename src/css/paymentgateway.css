@@ -1,0 +1,81 @@
+.payment-gateway {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .payment-gateway h2 {
+    margin-bottom: 20px;
+  }
+  
+  .payment-gateway .payment-method {
+    margin-bottom: 20px;
+  }
+  
+  .payment-gateway .payment-method button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-gateway .payment-method button.active {
+    background-color: #0056b3;
+  }
+  
+  .payment-gateway form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-gateway label {
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .payment-gateway input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .payment-gateway .error {
+    color: red;
+    margin: 10px 0;
+  }
+  
+  .payment-gateway .success {
+    color: green;
+    margin: 10px 0;
+  }
+  
+  .payment-gateway button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-gateway button:hover {
+    background-color: #0056b3;
+  }
+  
+  .payment-gateway button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

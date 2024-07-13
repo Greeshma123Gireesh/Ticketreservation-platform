@@ -1,0 +1,52 @@
+.seating-plan {
+    max-width: 800px; /* Adjust width as needed */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .seats-container {
+    display: grid;
+    grid-template-columns: repeat(8, 40px); /* 8 columns, each 40px wide */
+    gap: 5px; /* Gap between seats */
+    margin-top: 20px;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #c3c3c3; /* Default background color */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+  }
+  
+  .seat.booked {
+    background-color: #ff5555; /* Red color for booked seats */
+    cursor: not-allowed;
+  }
+  
+  .seat.selected {
+    background-color: #5cb85c; /* Green color for selected seats */
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,30 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heading {
+    background-color: brown;
+    margin-right: 80%;
+    position: relative;
+    padding: 10px; /* Adjust as needed */
+    color: white; /* Adjust as needed */
+    display: inline-block; /* Ensures the heading is only as wide as its content */
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px; /* Adjust as needed */
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent; /* Adjust as needed */
+    border-bottom: 40px solid transparent; /* Adjust as needed */
+    border-left: 20px solid brown; /* Adjust as needed and match background color */
+}
